@@ -253,7 +253,15 @@ module.exports = function (grunt) {
             '.htaccess',
             'components/**/*',
             'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
+            'styles/fonts/*',
+          ]
+        }, {
+          expand: true,
+          dot: true,
+          dest: '<%= yeoman.dist %>',
+          src: [
+            'config.xml',
+            'res/**'
           ]
         }]
       }

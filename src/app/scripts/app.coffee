@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('wwwApp', [])
+angular.module('fsmobile', [])
   .config ($routeProvider) ->
     $routeProvider
       .when '/',

@@ -7,3 +7,6 @@ angular.module('fsmobile')
       'AngularJS',
       'Karma'
     ]
+    document.addEventListener 'deviceready', ->
+      $scope.ready = true
+      $scope.$apply()

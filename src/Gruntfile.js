@@ -260,8 +260,15 @@ module.exports = function (grunt) {
           dot: true,
           dest: '<%= yeoman.dist %>',
           src: [
-            'config.xml',
             'res/**'
+          ]
+        }, {
+          expand: true,
+          dot: true,
+          flatten: true,
+          dest: '<%= yeoman.dist %>',
+          src: [
+            'app/config.xml',
           ]
         }]
       }

@@ -1,5 +1,5 @@
 node_modules
-dist
+dist/components/phonegap
 .tmp
 .sass-cache
 app/components

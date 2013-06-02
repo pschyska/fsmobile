@@ -251,7 +251,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,txt}',
             '.htaccess',
-            'components/**/*',
+            'components/cordova.js',
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*',
           ]

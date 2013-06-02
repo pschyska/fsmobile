@@ -9,4 +9,8 @@ angular.module('fsmobile')
     ]
     document.addEventListener 'deviceready', ->
       $scope.ready = true
+      $scope.openGoogle = ->
+        ref = window.open('http://www.google.com', '_blank', 'location=yes')
+        console.log ref
+        ref.addEventListener 'exit', -> (event) alert(event.type)
       $scope.$apply()

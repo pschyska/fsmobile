@@ -10,7 +10,8 @@ angular.module('fsmobile')
     document.addEventListener 'deviceready', ->
       $scope.ready = true
       $scope.openGoogle = ->
+        console.log 'opening google'
         ref = window.open('http://www.google.com', '_blank', 'location=yes')
         console.log ref
         ref.addEventListener 'exit', -> (event) alert(event.type)
-      $scope.$apply()
+      $scope.$apply() unless $scope.$$phase
